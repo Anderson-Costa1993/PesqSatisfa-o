@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mobile.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Interactive rating component</title>
+  </style>
+</head>
+<body>
+
+  <main>
+   <div id="container-principal">
+      <div id="container">
+        <div class="caixa-img">
+            <img src="images/icon-star.svg" alt="" class="img-star">
+        </div>  
+
+          <div class="section-itens">
+              <section class="descrition">
+               <h1 class="title">
+                   How did we do?
+               </h1>
+                  <p class="text"> Please let us know how we did with your support request. All feedback is appreciated
+                to help us improve our offering!</p>
+              </section>
+              <div class="classific">
+                 <tr id="notas">
+                    <td><button id="btn" onclick="clicar(1)" value="1">1</button></td>
+                    <td><button id="btn" onclick="clicar(2)" value="2">2</button></td>
+                    <td><button id="btn" onclick="clicar(3)" value="3">3</button></td>
+                    <td><button id="btn" onclick="clicar(4)" value="4">4</button></td>
+                    <td><button id="btn" onclick="clicar(5)" value="5">5</button></td>
+                </tr>
+              </div>
+              <button type="submit" onclick="submeter()" id="btn-submit">Submit</button>
+           </div>
+      </div>
+
+      <div id="container-retorno">
+         <div class="caixa-img-retorno">
+              <img src="images/illustration-thank-you.svg" alt="" class="img-retorno">
+         </div>
+
+          <div id="retorno">
+              <p id="retorno1" onclick="subscreve()">You selected <span id="rating">  </span> out of 5</p>
+          </div>
+
+         <div class="section-itens-retorno">
+           <section class="descrition-retorno">
+               <h1 class="title-retorno">
+                 Thank You!
+               </h1>
+                 <p class="text"> We appreciate you taking the time to give a rating. If you ever  need more support,
+                don’t hesitate to get in touch!</p>
+            </section>
+            <a href="index.html"><button class="submit" id="rate-again" onclick="eventHome()">Rate again</button></a>
+         </div>
+    </div>
+  </div>
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

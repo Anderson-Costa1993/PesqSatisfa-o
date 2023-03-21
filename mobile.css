@@ -1,0 +1,28 @@
+@media only screen and (max-width: 500px) {
+
+  #container, #container-retorno {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 700px) {
+
+  #container, #container-retorno {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 900px) {
+
+  #container, #container-retorno {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1100px){
+  #container, #container-retorno {
+    width: 35%;
+  }
+
+}
+
